@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <link rel="stylesheet" href="site.css" media="screen" />
+      <title>Game of Set</title>
+      <script src="site.js" async></script> 
+   </head>
+   <!-- BODY -->
+   <body id="float-container" onload="displayCards(); startTimer();displayScore();cardsLeftInDeck();">
+      <h1>Welcome to The Game of Set</h1>
+      <div class="content">
+         <div class="left">
+            <!-- BUTTONS !-->
+            <div class="buttons">
+               <input type="button" class="button" onClick="window.location.reload()" value="New Game" title="Button for new game">  
+               <input type="button" class="button" onClick="fullWindowPopup()" value="Rules" title="Button for rules">
+               <input type="button" class="button" onClick="deal3More()" value="Deal +3 Cards" title="Button for dealing more cards">
+               <input type="button" class="button" onClick="displayStats()" value="Statistics" title="Button for statistics">
+            </div>
+            <br />
+            <!-- Score/sets turns green and increments score if right; turns red if wrong  -->
+            <div id="score" onload="displayScore()"></div>
+            <br />
+            <div id="deckLength" onload="cardsLeftInDeck()"></div>
+         </div>
+         <div class="right">
+            <!-- This is the code for the game board cards -->
+            <div id="mainBoard">
+               <div class="filler">
+                  <!-- resetTimer button -->
+                  <input type="button" class="verifyButton" onClick="resetTimer()" value="Reset Timer"> 
+               </div>
+               <div id="timer">0</div>
+               <div class="filler">
+                  <!-- verifySet button -->
+                  <input type="button" class="verifyButton" onClick="verifySet()" value="Verify Set">
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

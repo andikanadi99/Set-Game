@@ -1,0 +1,22 @@
+{
+  "name": "proj5-grubhub-rovers",
+  "version": "1.0.0",
+  "description": "Mocha testing for JS files",
+  "main": "site.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cse3901-2021au-1240/proj5-grubhub-rovers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse3901-2021au-1240/proj5-grubhub-rovers/issues"
+  },
+  "homepage": "https://github.com/cse3901-2021au-1240/proj5-grubhub-rovers#readme"
+}
